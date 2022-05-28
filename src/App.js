@@ -48,7 +48,7 @@ function App() {
 
   return (
     <div className="App">
-      <h1 id="title">가위바위보</h1>
+      <h1 className="App-heading">가위바위보</h1>
       <h2>{getResult(hand, otherHand)}</h2>
       <div>
         <HandIcon value={hand}></HandIcon>
@@ -66,7 +66,7 @@ function App() {
       <p>
         {score} : {otherScore}
       </p>
-      <Button onClick={handleClearClick} className="new-btn">
+      <Button onClick={handleClearClick} className="App-reset">
         처음부터
       </Button>
       <HandButton value="rock" onClick={handleClick} />
