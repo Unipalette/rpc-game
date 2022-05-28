@@ -1,20 +1,20 @@
-@font-face {
-  font-style: normal;
-  font-weight: normal;
-  font-family: "GmarketSansMedium";
-  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff")
-    format("woff");
-}
+@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css");
 
 body {
   margin: 0;
-  font-family: "GmarketSansMedium", -apple-system, BlinkMacSystemFont,
-    "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans",
-    "Droid Sans", "Helvetica Neue", sans-serif;
+  font-family: Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto,
+    "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR",
+    "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
+    sans-serif;
+
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: #171717;
 }
-
+h1,
+p {
+  margin: 0;
+}
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
@@ -23,32 +23,172 @@ code {
 .Box-inner {
   border-radius: 35px;
 }
-.App {
-  position: relative;
-  width: 100%;
-  min-width: 575px;
-  max-width: 620px;
-  margin: 45px auto;
-  padding: 50px;
-  border-radius: 44px;
-  text-align: center;
-  background: #6f00ff;
-  background-color: #6f00ff;
-  box-shadow: 0 4.2px 2px #5900cc, 0 -4.2px 2px #8500ff;
-}
-.App-heading {
-  margin: 0 0 34px;
+.App-title {
+  margin-top: 40px;
   color: #fff;
-  font-weight: 700;
-  font-size: 30px;
   text-align: center;
-  text-shadow: 0 3px 0 #a875e9;
-  letter-spacing: 0.19px;
-  -webkit-text-stroke: 1px #fff;
+  font-weight: 500;
+  letter-spacing: -0.8px;
+  font-size: 28px;
 }
-.App-reset {
+.sub-title {
+  margin-top: 12px;
+  font-size: 14px;
+  font-weight: 100;
+  text-align: center;
+  letter-spacing: -0.6px;
+  color: #fff;
+}
+.App {
+  margin: 0 auto;
+  margin-top: 40px;
+  box-sizing: border-box;
+  background-color: #fff;
+  color: #171717;
+  width: 500px;
+  height: 800px;
+  border-radius: 40px;
+  padding: 60px;
+  position: relative;
+}
+.btn-reset {
   position: absolute;
-  top: 48px;
-  right: 49px;
+  right: 40px;
+  top: 30px;
+  font-weight: 100;
+  font-size: 14px;
+  letter-spacing: -0.8px;
+  background-color: rgba(247, 247, 247, 0.45);
+  border: 1px solid #efefef;
+  width: 100px;
+  line-height: 35px;
+  border-radius: 20px;
   cursor: pointer;
+}
+.btn-reset:hover {
+  background-color: rgba(247, 247, 247, 1);
+  transition: all 0.3s;
+}
+.score-title {
+  margin-top: 20px;
+  font-size: 20px;
+  color: #1a1a1a;
+  text-align: center;
+  letter-spacing: -0.8px;
+  font-weight: 400;
+}
+.score {
+  margin-top: 6px;
+  text-align: center;
+  font-size: 32px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  color: #4a4a4a;
+}
+.hand-icon-wrap {
+  margin-top: 65px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.hand-icon {
+  margin: 0 20px;
+  width: 138px;
+  height: 138px;
+  border-radius: 100%;
+  background-color: #a5a5a522;
+  position: relative;
+}
+.hand-icon .hand-icon-title {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: -35px;
+  font-size: 14px;
+  font-weight: 100;
+  color: #171717;
+  text-align: center;
+}
+.hand-icon .hand-icon-img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 60px;
+}
+/* .hand-icon:first-child:after {
+  content: "";
+  right: -65px;
+  position: absolute;
+  width: 1px;
+  height: 100px;
+  background-color: #a5a5a5;
+} */
+.bet-wrap {
+  margin-top: 26px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.bet-wrap .bet-input {
+  border: 1px solid #e3e3e3;
+  border-radius: 13px;
+  background-color: #fff;
+  width: 64px;
+  line-height: 26px;
+  box-sizing: border-box;
+  padding: 0 10px;
+  font-size: 14px;
+  font-weight: 100;
+  color: #171717;
+}
+.bet-wrap p {
+  font-size: 14px;
+  font-weight: 100;
+  letter-spacing: -0.8px;
+}
+.bet-wrap p:first-child {
+  margin-right: 12px;
+}
+.bet-wrap p:last-child {
+  margin-left: 8px;
+}
+.history-title {
+  letter-spacing: -0.8px;
+  margin-top: 55px;
+  font-size: 20px;
+  color: #171717;
+  font-weight: 500;
+  text-align: center;
+}
+.history {
+  margin-top: 14px;
+  text-align: center;
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 100;
+  color: #a5a5a5;
+  letter-spacing: -0.6px;
+}
+.btn-wrap {
+  margin-top: 50px;
+  display: flex;
+  justify-content: space-between;
+}
+.btn-wrap .btn {
+  font-size: 42px;
+  width: 98px;
+  height: 98px;
+  background-color: transparent;
+  border-radius: 100%;
+  border: 1px solid #e3e3e3;
+}
+.btn-wrap .btn:hover {
+  background-color: #a5a5a52e;
+  transition: all 0.3s;
+  font-size: 45px;
+}
+.btn-wrap .btn:last-child {
+  margin-right: 0;
 }

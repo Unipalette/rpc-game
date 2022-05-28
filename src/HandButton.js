@@ -5,7 +5,7 @@ function HandButton({ value, onClick }) {
     onClick(value);
   };
   return (
-    <button onClick={handleBtnClick}>
+    <button className="btn" onClick={handleBtnClick}>
       <HandIcon value={value} />
     </button>
   );

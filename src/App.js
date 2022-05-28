@@ -47,31 +47,53 @@ function App() {
   }
 
   return (
-    <div className="App">
-      <h1 className="App-heading">가위바위보</h1>
-      <h2>{getResult(hand, otherHand)}</h2>
+    <div>
       <div>
-        <HandIcon value={hand}></HandIcon>
-        VS
-        <HandIcon value={otherHand}></HandIcon>
+        <h1 className="App-title">가위 바위 보 게임</h1>
+        <p className="sub-title">"컴퓨터를 상대로 이겨보아요! ㅋㅋ"</p>
       </div>
-      <input
-        onChange={handleBetChange}
-        value={bet}
-        type="number"
-        min={1}
-        max={9}
-      ></input>
-      <p>승부 기록 : {history.join(" / ")}</p>
-      <p>
-        {score} : {otherScore}
-      </p>
-      <Button onClick={handleClearClick} className="App-reset">
-        처음부터
-      </Button>
-      <HandButton value="rock" onClick={handleClick} />
-      <HandButton value="paper" onClick={handleClick} />
-      <HandButton value="scissor" onClick={handleClick} />
+      <div className="App">
+        <Button onClick={handleClearClick} className="App-reset">
+          👻 처음부터
+        </Button>
+        <p className="score-title">점수</p>
+        <p className="score">
+          {score} : {otherScore}
+        </p>
+        <div className="bet-wrap">
+          <p>배점</p>
+          <input
+            className="bet-input"
+            onChange={handleBetChange}
+            value={bet}
+            type="number"
+            min={1}
+            max={9}
+          ></input>
+          <p>배</p>
+        </div>
+
+        {/* <h2 className="result">{getResult(hand, otherHand)}</h2> */}
+        <div className="hand-icon-wrap">
+          <div className="hand-icon">
+            <p className="hand-icon-title">나</p>
+            <HandIcon value={hand}></HandIcon>
+          </div>
+          <div className="hand-icon">
+            <p className="hand-icon-title">컴퓨터</p>
+            <HandIcon value={otherHand}></HandIcon>
+          </div>
+        </div>
+
+        <p className="history-title">승부 기록</p>
+        <p className="history"> {history.join(" / ")}</p>
+
+        <div className="btn-wrap">
+          <HandButton value="rock" onClick={handleClick} />
+          <HandButton value="paper" onClick={handleClick} />
+          <HandButton value="scissor" onClick={handleClick} />
+        </div>
+      </div>
     </div>
   );
 }

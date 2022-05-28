@@ -1,4 +1,8 @@
 function Button({ children, onClick }) {
-  return <button onClick={onClick}>{children}</button>;
+  return (
+    <button className="btn-reset" onClick={onClick}>
+      {children}
+    </button>
+  );
 }
 export default Button;
