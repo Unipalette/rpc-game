@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.css": "/rpc-game/static/css/main.d455bcca.css",
-    "main.js": "/rpc-game/static/js/main.1faeaddf.js",
+    "main.css": "/rpc-game/static/css/main.a0b5ba43.css",
+    "main.js": "/rpc-game/static/js/main.f6230184.js",
     "static/js/787.553b25ee.chunk.js": "/rpc-game/static/js/787.553b25ee.chunk.js",
     "static/media/scissor.svg": "/rpc-game/static/media/scissor.6096875e32afe995be0527d53ae2d2b0.svg",
     "static/media/rock.svg": "/rpc-game/static/media/rock.24f8e25552cb945e3f250a32608ab133.svg",
     "static/media/paper.svg": "/rpc-game/static/media/paper.19c16065ce3bbe6fe3fd4f07c0dd2f45.svg",
     "index.html": "/rpc-game/index.html",
-    "main.d455bcca.css.map": "/rpc-game/static/css/main.d455bcca.css.map",
-    "main.1faeaddf.js.map": "/rpc-game/static/js/main.1faeaddf.js.map",
+    "main.a0b5ba43.css.map": "/rpc-game/static/css/main.a0b5ba43.css.map",
+    "main.f6230184.js.map": "/rpc-game/static/js/main.f6230184.js.map",
     "787.553b25ee.chunk.js.map": "/rpc-game/static/js/787.553b25ee.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.d455bcca.css",
-    "static/js/main.1faeaddf.js"
+    "static/css/main.a0b5ba43.css",
+    "static/js/main.f6230184.js"
   ]
 }
