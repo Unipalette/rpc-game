@@ -73,7 +73,7 @@ function App() {
           <p>배</p>
         </div>
 
-        {/* <h2 className="result">{getResult(hand, otherHand)}</h2> */}
+        <h2 className="result">{getResult(hand, otherHand)}</h2>
         <div className="hand-icon-wrap">
           <div className="hand-icon">
             <p className="hand-icon-title">나</p>
