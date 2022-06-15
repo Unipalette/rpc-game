@@ -50,7 +50,7 @@ function App() {
     <div>
       <div>
         <h1 className="App-title">가위 바위 보 게임</h1>
-        <p className="sub-title">"컴퓨터를 상대로 이겨보아요! ㅋㅋ"</p>
+        <p className="sub-title">"컴퓨터를 상대로 이겨보아요!"</p>
       </div>
       <div className="App">
         <Button onClick={handleClearClick} className="App-reset">
